@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home assignment #17-18 for JS</title>
+
+	<link rel="stylesheet" type="text/css" href="css/dest/style.min.css">
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/dest/script.min.js"></script>
+<!-- 
+	<script src="js/jquery.slider.js"></script>
+
+	<script src="js/script.js"></script>
+	<script src="js/tmpl.js"></script> -->
+
+</head>
+<body>
+
+	<h1>Говорят, что если хочешь рассмешить бога - расскажи о своих планах...</h1>
+	<h2>И все-же я рискну заявить, что собираюсь:</h2>
+
+	<div class="carousel-wrapper">
+		<button class="carousel-arrow-left">&laquo;</button>
+		<div class="carousel-hider">
+			<ul class="carousel-list">
+				<li class="carousel-element"><div class="element-position"><img src="img/home.jpg" alt="Home"><p>Купить жилье в Киеве</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/business.jpg" alt="Business"><p>Построить бизнес на новом месте</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/travel.jpg" alt="Travel"><p>Таки начать путешествовать</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/bike1.jpg" alt="Lifestyle"><p>Пересесть с авто на байк</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/sport.jpg" alt="Sport"><p>Похудеть и заняться спортом</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/reading.jpg" alt="Reading"><p>Прочитать  Агату Кристи в оригинале</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/money.jpg" alt="Money"><p>Заработать на все это дело</p></div></li>
+				<li class="carousel-element"><div class="element-position"><img src="img/addiction.jpg" alt="Addiction"><p>Превратить свои вредные привычки в полезные</p></div></li>	 
+
+
+			</ul>
+		</div>
+
+		<button class="carousel-arrow-right">&raquo;</button>
+	</div>
+	<div class="template-wrapper">
+		<script type="text/template" id="output-info">
+			<div class="output-wrapper">
+				<h1 class="header-output"><%= data[0].header %></h1>
+				<div class="image-output">
+					<img  src="<%= data[0].img %>" alt="">
+				</div>
+				<% for (var i =  0; i < data.length; i++) { %>						
+				<p class="content-output"><%= data[i].content %></p>
+				<div class="line"></div>			
+				<% }; %>
+			</div>		
+		</script>
+		<div class="button-refer-position">
+			<button class="button-refer">И кто это такой смелый?</button>
+		</div>
+		
+	</div>
+</body>
+</html>

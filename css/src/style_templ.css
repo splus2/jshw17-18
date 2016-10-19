@@ -1,0 +1,49 @@
+.output-wrapper {
+    display: none;
+    margin: 30px auto;
+    padding: 30px 0;
+    width: 40%;
+    border: 1px solid #473C8B;
+    box-shadow: 0 0 10px #473C8B;
+}
+
+.image-output {
+    text-align: center;
+}
+
+.content-output {
+    margin-left: 25px;
+}
+
+.box-line {
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 2px solid grey;
+}
+
+.button-refer-position {
+    margin: 50px;
+    text-align: center;
+}
+
+.button-refer {
+    width: 300px;
+    height: 50px;
+    background: #836FFF;
+    border: 1px solid grey;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-refer:hover {
+    background: #473C8B;
+    color: #ffffff;
+}
+
+.line {
+    border-bottom: 1px solid #473C8B;
+    width: 90%;
+    margin: 0 auto;
+}
+
